@@ -17,6 +17,7 @@
         <module>spring-annotation</module>
         <module>spring-tomcat</module>
         <module>spring-webflow</module>
+        <module>spring-bean</module>
     </modules>
     <properties>
         <junit.version>4.12</junit.version>

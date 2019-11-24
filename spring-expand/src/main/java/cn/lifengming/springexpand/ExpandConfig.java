@@ -1,6 +1,7 @@
 package cn.lifengming.springexpand;
 
 import cn.lifengming.spring.common.Apple;
+import cn.lifengming.springexpand.mybean.People;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -80,8 +81,8 @@ import org.springframework.context.annotation.Configuration;
 public class ExpandConfig {
 
     @Bean
-    public Apple apple(){
-        return new Apple();
+    public People people(){
+        return new People();
     }
 
 }

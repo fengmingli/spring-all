@@ -22,7 +22,6 @@ public class MyBeanFactoryPostProcess implements BeanFactoryPostProcessor {
         System.out.println("当前bean中有" + count + "个bean被加载了。。。");
         System.out.println(Arrays.asList(beanDefinitionNames));
 
-
         Map<String, Apple> map = beanFactory.getBeansOfType(Apple.class);
         for (Apple apple : map.values()) {
                 assert apple.getClass()==null;

@@ -11,14 +11,14 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Test {
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(EnableBeanDefinition.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ExpandConfig.class);
         System.out.println("==========");
-//        People lfm=(People) context.getBean("lfm");
-//        lfm.setAge(24);
-//        lfm.setName("lifengimng");
-//        System.out.println(lfm.getAge()+"=="+lfm.getName());
-        Object o=context.getBean("MyFactoryBean");
-        System.out.println(o);
+        People lfm=(People) context.getBean("people");
+        lfm.setAge(24);
+        lfm.setName("lifengimng");
+        System.out.println(lfm.getAge()+"=="+lfm.getName());
+//        Object o=context.getBean("MyFactoryBean");
+//        System.out.println(o);
 
 
     }
